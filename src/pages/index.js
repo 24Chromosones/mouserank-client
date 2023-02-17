@@ -1,12 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import {Inter} from '@next/font/google';
 import {Navbar} from "@/components/navbar/navbar";
 import Link from "next/link";
 import style from './index.module.scss';
 import {Footer} from "@/components/footer/footer";
-
-const inter = Inter({subsets: ['latin']});
 
 export default function Home() {
     return (
@@ -23,7 +20,7 @@ export default function Home() {
                     <h1>The one-stop website for your gaming mouse and keyboard</h1>
                 </div>
                 <div className={style.boxlinks}>
-                    <Link href="">Mouse Rankings
+                    <Link href="/mouse">Mouse Rankings
                         <Image
                             alt="mouseimage"
                             src={"/mouseimgcrop.jpeg"}
@@ -32,7 +29,7 @@ export default function Home() {
                             quality={100}
                         />
                     </Link>
-                    <Link href="">Keyboard Rankings
+                    <Link href="/keyboard">Keyboard Rankings
                         <Image
                             alt="keyboardimage"
                             src={"/keyboardcrop.jpeg"}
